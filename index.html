@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+      href="https://open.spotifycdn.com/cdn/images/favicon16.1c487bff.png"
+    />
+    <link
+      rel="icon"
+      href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
+    />
+    <style>
+      .hov {
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      .hov:hover {
+        overflow-y: scroll;
+      }
+    </style>
+    <title>Spotify - Web Player: Music for everyone</title>
+  </head>
+  <body style="background-color: #000">
+    <div style="display: flex">
+      <div style="width: 20%; padding: 5px; margin-left: 5px">
+        <div
+          style="
+            background-color: #121212;
+            color: white;
+            border-radius: 5px;
+            padding: 15px 12px;
+          "
+        >
+          <span style="padding-bottom: 10px; cursor: pointer">
+            <i
+              class="fa-brands fa-spotify"
+              style="padding-right: 2px; font-size: large; cursor: pointer"
+            ></i
+            >Spotify
+          </span>
+          <br />
+          <br />
+          <span style="padding-bottom: 10px; cursor: pointer">
+            <i
+              class="fa-solid fa-house"
+              style="padding-right: 10px; font-size: large"
+            ></i
+            >Home
+          </span>
+          <br />
+          <br />
+          <span
+            style="
+              padding-bottom: 10px;
+              font-size: large;
+              color: darkgray;
+              cursor: pointer;
+            "
+          >
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="padding-right: 10px; color: darkgray"
+            ></i>
+            Search
+          </span>
+        </div>
+        <div
+          style="
+            background-color: #121212;
+            color: white;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 5px;
+            height: 76%;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              padding: 5px 10px;
+            "
+          >
+            <div>
+              <svg style="height: 30px; width: 20px; cursor: pointer">
+                <path
+                  d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              style="
+                margin-top: 5px;
+                margin-right: 100px;
+                color: darkgray;
+                cursor: pointer;
+              "
+            >
+              Your library
+            </div>
+
+            <div style="color: darkgray; cursor: pointer">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <div
+            class="hov"
+            style="
+              height: 110px;
+
+              scrollbar-color: #000 #121212;
+              padding-top: 10px;
+            "
+          >
+            <div
+              style="
+                background-color: #2a2a2a;
+                color: white;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                margin-top: 10px;
+                border-radius: 5px;
+                width: 240px;
+              "
+            >
+              <span style="font-size: 17px; width: 100%">
+                <p>Create your first playlist</p></span
+              >
+
+              <span style="font-size: 15px"
+                ><p>It's easy, we'll help you</p></span
+              >
+              <div style="padding-top: 10px">
+                <button
+                  style="
+                    border-radius: 20px;
+                    align-items: center;
+                    font-size: 13px;
+                    font-weight: bold;
+                    padding: 10px;
+                    cursor: pointer;
+                  "
+                >
+                  Create playlist
+                </button>
+              </div>
+            </div>
+            <div
+              style="
+                background-color: #2a2a2a;
+                color: white;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                margin-top: 10px;
+                border-radius: 5px;
+                width: 240px;
+              "
+            >
+              <span style="font-size: 17px; width: 100%">
+                <p>Let's find some podcasts to follow</p></span
+              >
+
+              <span style="font-size: 15px"
+                ><p>We'll keep you updated on new episodes</p></span
+              >
+              <div style="padding-top: 10px">
+                <button
+                  style="
+                    border-radius: 20px;
+
+                    padding: 10px;
+                    align-items: center;
+                    font-size: 13px;
+                    font-weight: bold;
+                    cursor: pointer;
+                  "
+                >
+                  Browse podcasts
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              style="
+                display: flex;
+                font-size: 12px;
+                padding-left: 10px;
+                margin-right: 10px;
+                justify-content: space-between;
+                color: darkgray;
+                padding-top: 20px;
+              "
+            >
+              <p style="cursor: pointer">Legal</p>
+              <p style="cursor: pointer">Safety&PrivacyCenter</p>
+              <p style="cursor: pointer">Privacy Policy</p>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                font-size: 12px;
+                padding-left: 10px;
+                margin-right: 10px;
+                justify-content: space-between;
+                color: darkgray;
+                padding-top: 5px;
+              "
+            >
+              <span style="cursor: pointer">Cookies</span>
+              <span style="cursor: pointer">AboutAds</span>
+              <span style="cursor: pointer">Accessibility</span>
+            </div>
+            <div
+              style="
+                padding-left: 10px;
+                font-size: 12px;
+                color: darkgray;
+                padding-top: 5px;
+              "
+            >
+              <p style="cursor: pointer">Cookies</p>
+            </div>
+
+            <div style="padding-left: 10px; padding-top: 30px">
+              <button
+                style="
+                  background-color: #121212;
+                  color: white;
+                  border-radius: 18px;
+                  border: white;
+                  border-style: solid;
+                  border-width: 1px;
+                  padding: 10px;
+                  width: 100px;
+                  align-items: center;
+                  font-size: 13px;
+                  font-weight: bold;
+                  cursor: pointer;
+                "
+              >
+                <i class="fa-solid fa-globe" style="padding-right: 5px"></i
+                >English
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          background-color: #121212;
+          color: white;
+          border-radius: 5px;
+          padding: 10px 10px;
+
+          margin-top: 5px;
+          width: 80%;
+          height: 100%;
+        "
+      >
+        <div
+          style="
+            background-color: #121212;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            align-items: center;
+          "
+        >
+          <div style="display: flex">
+            <div style="padding-right: 10px">
+              <svg
+                style="
+                  background-color: #3a3a3a;
+                  height: 15px;
+                  width: 15px;
+                  border-radius: 100%;
+                  align-items: center;
+                  padding: 10px;
+                "
+              >
+                <path
+                  d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <svg
+                style="
+                  background-color: #3a3a3a;
+                  height: 15px;
+                  width: 15px;
+                  border-radius: 100%;
+                  align-items: center;
+                  padding: 10px;
+                "
+              >
+                <path
+                  d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+
+              align-items: center;
+            "
+          >
+            <h3
+              style="
+                align-items: center;
+                font-size: 20px;
+                width: 130px;
+                color: darkgray;
+                cursor: pointer;
+              "
+            >
+              Sign up
+            </h3>
+            <div>
+              <button
+                style="
+                  border-radius: 50px;
+
+                  padding: 10px;
+                  align-items: center;
+                  font-size: 20px;
+                  width: 130px;
+                  font-weight: bold;
+                  cursor: pointer;
+                "
+              >
+                Log in
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          style="background-color: #2a2a2a; height: 500px; border-radius: 10px"
+        >
+          <div
+            style="
+              padding-top: 20px;
+              padding-left: 20px;
+              padding-right: 20px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div><h2 style="cursor: pointer">Popular artists</h2></div>
+            <div style="color: darkgray; padding-right: 50px">
+              <h4 style="cursor: pointer">Show all</h4>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div class="hov2" style="width: 100%">
+              <div>
+                <img
+                  style="border-radius: 50%; width: 50%; padding-left: 10px"
+                  src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                />
+              </div>
+              <span style="padding-left: 20px"><b>Pritam</b></span>
+              <br />
+              <span style="color: darkgray; padding-left: 20px">Artist</span>
+            </div>
+
+            <div style="width: 100%">
+              <div>
+                <img
+                  style="border-radius: 50%; width: 50%; padding: 0; margin: 0"
+                  src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7"
+                />
+              </div>
+              <span style="padding-left: 20px"><b>Arjit Singh</b></span>
+              <br />
+              <span style="color: darkgray; padding-left: 20px">Artist</span>
+            </div>
+            <div style="width: 100%">
+              <div>
+                <img
+                  style="border-radius: 50%; width: 50%; padding-left: 10px"
+                  src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                />
+              </div>
+              <span style="padding-left: 20px"><b>A.R.Rahman</b></span>
+              <br />
+              <span style="color: darkgray; padding-left: 20px">Artist</span>
+            </div>
+            <div style="width: 100%">
+              <div>
+                <img
+                  style="border-radius: 50%; width: 50%; padding-left: 10px"
+                  src="https://i.scdn.co/image/ab67616100005174a038d7d87f8577bbb9686bd3"
+                />
+              </div>
+              <span style="padding-left: 20px"><b>Sachin-Jigar</b></span>
+              <br />
+              <span style="color: darkgray; padding-left: 20px">Artist</span>
+            </div>
+            <div style="width: 100%">
+              <div>
+                <img
+                  style="border-radius: 50%; width: 50%; padding-left: 10px"
+                  src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843"
+                />
+              </div>
+              <span style="padding-left: 20px"
+                ><b>Anirudh </b><br /><b style="padding-left: 20px"
+                  >Ravichander</b
+                ></span
+              >
+              <br />
+              <span style="color: darkgray; padding-left: 20px">Artist</span>
+            </div>
+            <div style="width: 100%">
+              <div>
+                <img
+                  style="border-radius: 50%; width: 50%; padding-left: 10px"
+                  src="https://i.scdn.co/image/ab67616100005174fb13d10be20fdcb5a670f551"
+                />
+              </div>
+              <span style="padding-left: 20px"><b>Vishal Mishra</b></span>
+              <br />
+              <span style="color: darkgray; padding-left: 20px">Artist</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
